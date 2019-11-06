@@ -222,7 +222,7 @@ main {
   width: 6px;
   background-color: #743ad5 ;
   top: 0;
-  bottom: 100vh;
+  bottom: 120vh;
   left: 50%;
   margin-left: -3px;
 
@@ -302,10 +302,11 @@ main {
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
 /* Place the timelime to the left */
   .timeline2::after {
     left: 31px;
+    bottom: 80vh;
   }
 
 /* Full-width containers */
@@ -333,6 +334,17 @@ main {
     left: 0%;
   }
 
+  .btn {
+  background-color: #b3ffda;
+  border: none;
+  color: black;
+  padding: 12px 12px;
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: none;
+}
+
+
   
 }
 
@@ -340,6 +352,9 @@ main {
   width: 10vw; height: 10vw; border-right: solid 2px; border-image: linear-gradient(to right, #743ad5 0%, #d53a9d 100%);
   border-image-slice: 1;
 }
+#icon2 {
+  width: 10vw; height: 10vw;}
+
 
 
 table { 
@@ -366,7 +381,7 @@ table {
   background-color: #b3ffda;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 640px){
 #tabletext{ 
   width: 50%;
   margin-left: 0;
@@ -377,7 +392,9 @@ table {
   width: 15vw; height: 15vw; border-right: solid 2px; border-image: linear-gradient(to right, #743ad5 0%, #d53a9d 100%);
   border-image-slice: 1;
 }
-
+/*.text{
+    font-size: 5px;
+  }*/
   }
  
 
@@ -517,7 +534,10 @@ h2{
 }
 
 .text{
-  font-size: 5px;
+  font-size: 10px;
+}
+.btn {
+ padding: none;
 }
 
 
@@ -629,14 +649,7 @@ input[type=submit]:hover {
   width: 50%;
 }
 
-/*.image {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
-}*/
+
 
 .gif {
   width: 200px; 
@@ -671,10 +684,22 @@ input[type=submit]:hover {
   font-size: 16px;
   padding: 16px 32px;
 }
-#p3m {
-  margin-right:50px;
-}
+
 
 #intern{
   margin-right: 90px;
 }
+.btn {
+  background-color: #b3ffda;
+  border: none;
+  color: black;
+  padding: 12px 12px;
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 25px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+  
